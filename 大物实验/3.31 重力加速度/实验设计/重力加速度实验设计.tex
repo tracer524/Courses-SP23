@@ -1,0 +1,39 @@
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,left=3cm,right=3cm,top=2cm]{geometry}
+
+\setlength\lineskiplimit{5.25bp}
+\setlength\lineskip{5.25bp}
+
+\title{重力加速度的测量——实验设计}
+\author{崔士强}
+\date{\today}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+\maketitle
+\section{不确定度的计算}
+\noindent 由周期公式
+\[T=2\pi \sqrt{\frac{l}{g}}\]
+得最大不确定度公式
+\[\frac{\Delta g}{g}=2\frac{\Delta T}{T}+\frac{\Delta l}{l}\]
+实验要求 $\Delta g/g<1\%$，由不确定度均分原理可得 $\Delta T/T<0.25\%$，$\Delta l/l<0.5\%$
+
+\noindent 设 $\Delta_1$ 为秒表的最大允差 $0.01s$ ，$\Delta_2$ 为实验人员测量时间的精度 $0.2s$ ，则有
+\[\Delta T=\Delta_{1}+\Delta_{2}\]
+可得总时间的最小值
+\[T_{min}=84s\]
+取 $\Delta l=0.2cm$ 可得摆长的最小值
+\[l_{min}=40cm\]
+\section{实验过程}
+使用钢卷尺直接测量细绳悬挂点到小球中心的距离作为摆长，受细绳自重的影响，摆长过长会导致测量精度下降.
+此实验中摆长 $l$ 取 $70cm$.
+
+取合肥地区重力加速度的估计值 $g=9.7947m/s^2$ ，代入周期公式得 $T\approx 1.68s$ ，继而得出周期数的最小值
+\[n_{min}=50\]
+\indent 由于摆长直接测出，故不需要再对小球直径进行测量.
+实验过程中为了减小误差，从球第一次经过最低点开始计时，50个周期后停止计时得到总时间，重复进行五次测量，计算摆动周期便可求出重力加速度.
+\bibliography{math}
+
+\end{document}

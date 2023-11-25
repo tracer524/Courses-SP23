@@ -1,0 +1,58 @@
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,left=3cm,right=3cm,top=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+\setlength\lineskiplimit{5.25bp}
+\setlength\lineskip{5.25bp}
+
+\title{以楞次定律为基础设计的实验方案}
+\author{崔士强 PB22151743}
+\date{\today}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+\maketitle
+\section{实验目的}
+探究磁铁在金属管中下落时的运动规律以及各参数对下落过程的影响
+\section{实验原理}
+磁铁在金属管中下落时，通过金属管的磁通量发生变化，从而产生感应电流，感应电流产生的磁场阻碍金属管的下落.
+\section{实验器材}
+秒表，游标卡尺，钢卷尺，直径不同、长度相同的金属管，带有细线的大小不同的磁铁块（小于金属管内径），带有细线的钢球.
+\section{实验过程}
+将金属管竖直固定，用游标卡尺测量内径$D_1$以及小球直径$d_1$把钢球从顶端由静止放下，在某一时间$t_1$捏紧细绳使钢球停下，测量下落的高度$h_1$，重复测量多次得到一系列$t$与$h$，最后一组$h$取金属管长度，所对应的$t$即为通过金属管的用时.数据记录如下表
+\begin{table}[H]\centering
+    \newcolumntype{Y}{>{\centering\arraybackslash}X}
+    \begin{tabularx}{150pt}{cYY}
+        \hline\hline
+        $i$ & $t_i/s$ & $h_i/cm$\\
+        \hline
+        1\\
+        2\\
+        3\\
+        4\\
+        5\\
+        6\\
+        \hline\hline
+    \end{tabularx}%
+\end{table}
+之后将钢球换为磁铁，固定金属管直径，换用不同大小的磁铁重复上述操作，得到数据. 再固定磁铁大小，换用不同直径的金属管重复上述操作，得到数据.
+\section{数据处理与分析}
+利用软件作出每次实验的$h-t$图像，探究金属管直径$D$和磁铁尺寸$d$对下落过程的影响，例如：
+\begin{enumerate}
+    \item 磁铁下落过程中速度如何变化？
+    \item 随$D$和$d$变化，加速过程有什么变化？
+    \item 随$D$和$d$变化，磁铁通过金属管用时有什么变化？
+\end{enumerate}
+
+\bibliography{math}
+
+\end{document}

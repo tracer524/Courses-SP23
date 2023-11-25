@@ -1,0 +1,58 @@
+\documentclass[UTF8]{ctexart}
+\usepackage[a4paper,left=3cm,right=3cm,top=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{graphicx}
+
+\setlength\lineskiplimit{5.25bp}
+\setlength\lineskip{5.25bp}
+
+\title{落球法测粘滞系数数据处理}
+\author{崔士强 PB22151743}
+\date{\today}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+\maketitle
+\section{计算过程}
+本实验中$g$取$9.7947\mathrm{m/s^2}$.
+
+小球：
+\[\overline{d_1}=\frac{\left(2.000+2.002+2.001+2.004+1.989+1.992\right)}{6}\mathrm{mm}=1.998\mathrm{mm}\]
+\[\overline{m_1}=\frac{\left(0.0341+0.0338+0.0338+0.0339+0.0322+0.0334\right)}{6}\mathrm{g}=0.0335\mathrm{g}\]
+\[\overline{t_1}=\frac{\left(12.54+12.67+12.5+13.14+12.97+12.85\right)}{6}\mathrm{s}=12.778\mathrm{s}\]
+\[\eta_0=\frac{1}{18}\frac{\left(\rho-\rho_0\right)gd^2}{v\left(1+2.4\frac{d}{2R}\right)\left(1+3.3\frac{d}{2h}\right)}=0.66013\mathrm{Pa·s}\]
+\[Re=\frac{d\rho_0v}{\eta_0}=0.042154<0.1\]
+\[\eta=\eta_0=0.66013\mathrm{Pa·s}\]
+\indent 中球：
+\[\overline{d_2}=\frac{\left(3.009+3.002+2.997+3.000+3.009+2.998\right)}{6}\mathrm{mm}=3.0025\mathrm{mm}\]
+\[\overline{m_2}=\frac{\left(0.1131+0.1123+0.1126+0.1133+0.1134+0.1125\right)}{6}\mathrm{g}=0.11287\mathrm{g}\]
+\[\overline{t_2}=\frac{\left(5.45+5.33+5.57+5.34+5.49+5.42\right)}{6}\mathrm{s}=5.4333\mathrm{s}\]
+\[\eta_0=\frac{1}{18}\frac{\left(\rho-\rho_0\right)gd^2}{v\left(1+2.4\frac{d}{2R}\right)\left(1+3.3\frac{d}{2h}\right)}=0.59149\mathrm{Pa·s}\]
+\[Re=\frac{d\rho_0v}{\eta_0}=0.14829\]
+\[0.1<Re<0.5\]
+\[\eta_1=-\frac{3d\rho_0v}{16}+\eta_0=0.57505\mathrm{Pa·s}\]
+\indent 大球
+\[\overline{d_3}=\frac{\left(3.492+3.496+3.497+3.498+3.5+3.496\right)}{6}\mathrm{mm}=3.4965\mathrm{mm}\]
+\[\overline{m_3}=\frac{\left(0.1784+0.1791+0.1789+0.1778+0.1796+0.1780\right)}{6}\mathrm{g}=0.17863\mathrm{g}\]
+\[\overline{t_3}=\frac{\left(3.14+3.21+3.17+3.19+3.1+3.35\right)}{6}\mathrm{s}=3.1933\mathrm{s}\]
+\[\eta_0=\frac{1}{18}\frac{\left(\rho-\rho_0\right)gd^2}{v\left(1+2.4\frac{d}{2R}\right)\left(1+3.3\frac{d}{2h}\right)}=0.59149\mathrm{Pa·s}\]
+\[Re=\frac{d\rho_0v}{\eta_0}=0.22841\]
+\[0.1<Re<0.5\]
+\[\eta_1=-\frac{3d\rho_0v}{16}+\eta_0=0.55176\mathrm{Pa·s}\]
+\section{思考题}
+\begin{enumerate}
+    \item 可能引起误差的因素包括：计时过程中反应时间，测量不准确，各次实验中温度不一致等
+    \item 同样材质的情况下，直径大的球匀速下降区小
+    \item 雷诺系数是流体的惯性力与粘性力的比值
+    \item 不适用于不透明液体
+\end{enumerate}
+\bibliography{math}
+
+\end{document}
